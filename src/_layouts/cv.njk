@@ -1,7 +1,8 @@
 ---
 layout: base.njk
 ---
-<main class="page">
+
+<div class="page">
   <header class="container">
     <div class="mx-auto max-w-40 w-full mt-1 text-right t:text-left">
     <ul class="italic space-y-1 t:space-y-auto text-lg t:flex t:flex-row">
@@ -10,9 +11,12 @@ layout: base.njk
     </ul>
     </div>
   </header>
+  <main>
     <section class="container">
       <div class="mx-auto max-w-40 w-full">
             {{ content | safe }}
       </div>
     </section>
-</main>
+  </main>
+  {% include "partials/footer.njk" %}
+</div>
