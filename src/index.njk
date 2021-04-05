@@ -36,7 +36,10 @@ keywords: daniel, rafaj, cv, resume, portfolio
             <p class="text-sm"><a href="https://collageofficial.com">COLLAGE (We Own It ApS)</a></p>
             <p class="text-xs">Jan 2017 - Present (<span id="collage-year">X</span>years)</p>
         </li>
-
+        <script type="text/javascript">
+            document.getElementById("collage-year").innerHTML=new Date().getUTCFullYear() - 2017;
+            document.getElementById("indsigt-year").innerHTML=new Date().getUTCFullYear() - 2018;
+        </script>
         <li>
             <p class="text-lg font-bold">Web developer - Backend & Frontend developer</p>
             <p class="text-sm">NodeJS, Python, Loopback, PostgreSQL, Jade(Pug), Elasticsearch</p>
