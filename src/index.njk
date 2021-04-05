@@ -27,38 +27,41 @@ keywords: daniel, rafaj, cv, resume, portfolio
             <p class="text-lg font-bold">Fullstack developer - Backend, Frontend, DevOps & Maintance</p>
             <p class="text-sm">NodeJS, PHP, Purescript, JAMstack, React, MySQL, PostgreSQL, Lambda - serverless, DevOps, NextJS, Eleventy</p>
             <p class="text-sm"><a href="http://indsigt.design/">Indsigt design</a></p>
-            <p class="text-xs">Mar 2018 - Present (<span id="indsigt-year">X</span>years)</p>
+            <p class="text-xs">Mar 2018 - Present (<span id="indsigt-year">X</span> years & <span id="indsigt-month">X</span> months)</p>
         </li>
 
         <li>
             <p class="text-lg font-bold">Fullstack developer - Backend, Frontend, DevOps</p>
             <p class="text-sm">NodeJS, Elasticsearch, Python, Redis, MongoDB, ReactJS, AWS S3, Lambda serverless, Jest, ExpressJS, NextJS, UNIX Tools </p>
             <p class="text-sm"><a href="https://collageofficial.com">COLLAGE (We Own It ApS)</a></p>
-            <p class="text-xs">Jan 2017 - Present (<span id="collage-year">X</span>years)</p>
+            <p class="text-xs">Jan 2017 - Present (<span id="collage-year">X</span> years & <span id="collage-month">X</span> months))</p>
         </li>
         <script type="text/javascript">
-            document.getElementById("collage-year").innerHTML=new Date().getUTCFullYear() - 2017;
-            document.getElementById("indsigt-year").innerHTML=new Date().getUTCFullYear() - 2018;
+            var d = new Date();
+            document.getElementById("indsigt-year").innerHTML=d.getUTCFullYear() - 2018;
+            document.getElementById("indsigt-month").innerHTML=d.getUTCMonth() - 2;
+            document.getElementById("collage-year").innerHTML=d.getUTCFullYear() - 2017;
+            document.getElementById("collage-month").innerHTML=d.getUTCMonth() - 0;
         </script>
         <li>
             <p class="text-lg font-bold">Web developer - Backend & Frontend developer</p>
             <p class="text-sm">NodeJS, Python, Loopback, PostgreSQL, Jade(Pug), Elasticsearch</p>
             <p class="text-sm"><a href="http://www.mearto.com/en/">Mearto</a></p>
-            <p class="text-xs">Jun 2016 - Jan 2017 (8months)</p>
+            <p class="text-xs">Jun 2016 - Jan 2017 (8 months)</p>
         </li>
 
         <li>
             <p class="text-lg font-bold">Web developer - Backend & Frontend developer - Project based</p>
             <p class="text-sm">NodeJS, MongoDB, AngularJS, Loopback, Sass, HTML5, CSS3</p>
             <p class="text-sm"><a href="http://uxnova.dk/?lang=en">UX Nova</a></p>
-            <p class="text-xs">Nov 2015 - Apr 2016 (6months)</p>
+            <p class="text-xs">Nov 2015 - Apr 2016 (6 months)</p>
         </li>
 
         <li>
             <p class="text-lg font-bold">Web developer - Backend & Frontend developer Internship</p>
             <p class="text-sm">Javascript, MongoDB, NodeJS, ExpressJS, AngularJS</p>
             <p class="text-sm"><a href="https://wiredelta.com/">Wiredelta</a></p>
-            <p class="text-xs">Aug 2015 - Oct 2015 (3months)</p>
+            <p class="text-xs">Aug 2015 - Oct 2015 (3 months)</p>
         </li>
     </ul>
 
