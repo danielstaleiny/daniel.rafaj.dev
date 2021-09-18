@@ -8,7 +8,12 @@ keywords: daniel, rafaj, cv, resume, portfolio
     <h1 class="h1 mb-0">Daniel Rafaj</h1>
 
     <p class="text-h4">
+      <span>Email: </span>
         <a class="u-email" href="mailto:hala-bala@tutanota.com">hala-bala@tutanota.com</a>
+    </p>
+    <p class="text-h4">
+      <span>Github: </span>
+        <a class="u-github" href="https://github.com/danielstaleiny/">github.com/danielstaleiny</a>
     </p>
 
     <span class="p-name hidden">Daniel Rafaj</span>
@@ -21,7 +26,8 @@ keywords: daniel, rafaj, cv, resume, portfolio
 <div class="mb-1">
 
 
-    <h2 class="h2">Work experience</h2>
+  <h2 class="h2 mb-0.25"><span id="work-exp"></span> years of work experience</h2>
+  <p class="p text-lg">Focusing primarily on performant websites, open protocols,<br/>simplicity and functional programming</p>
     <ul class="mt-1 space-y-1">
         <li>
             <p class="text-lg font-bold">Fullstack developer - Backend, Frontend, DevOps & Maintance</p>
@@ -38,6 +44,7 @@ keywords: daniel, rafaj, cv, resume, portfolio
         </li>
         <script type="text/javascript">
             var d = new Date();
+            document.getElementById("work-exp").innerHTML=d.getUTCFullYear() - 2015;
             document.getElementById("indsigt-year").innerHTML=d.getUTCFullYear() - 2018;
             document.getElementById("indsigt-month").innerHTML=d.getUTCMonth() - 2;
             document.getElementById("collage-year").innerHTML=d.getUTCFullYear() - 2017;
