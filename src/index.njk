@@ -31,8 +31,16 @@ keywords: daniel, rafaj, cv, resume, portfolio
 
     <ul class="mt-1 space-y-1">
         <li>
+            <p class="text-lg font-bold">Fullstack developer - Backend, Frontend</p>
+            <p class="text-sm">NodeJS, Purescript, Vue, TailwindCSS</p>
+            <p class="text-lg"><a href="https://pensure.dk/">Pensure</a></p>
+            <p class="text-sm mt-0.25 mb-0.25">Software development & validation of technologies</p>
+            <p class="text-xs">Dec 2021 - Present (<span id="pensure-year">X</span> years & <span id="pensure-month">X</span> months)</p>
+        </li>
+
+        <li>
             <p class="text-lg font-bold">Fullstack developer - Backend, Frontend, DevOps & Maintenance</p>
-            <p class="text-sm">NodeJS, PHP, Purescript, Nix, JAMstack, React, MySQL, PostgreSQL, AWS Lambda - serverless, DevOps, NextJS, Eleventy</p>
+            <p class="text-sm">NodeJS, PHP, Purescript, Nix, PostgREST, JAMstack, React, MySQL, PostgreSQL, AWS Lambda - serverless, DevOps, NextJS, Eleventy</p>
             <p class="text-lg"><a href="http://indsigt.design/">Indsigt design</a></p>
             <p class="text-sm mt-0.25 mb-0.25">From architecture to deployment, both prototypes and production products including maintenance of already deployed production websites and services.</p>
             <p class="text-xs">Mar 2018 - Present (<span id="indsigt-year">X</span> years & <span id="indsigt-month">X</span> months)</p>
@@ -45,10 +53,29 @@ keywords: daniel, rafaj, cv, resume, portfolio
             <p class="text-xs">Jan 2017 - November 2021 ( 4 years & 10 months)</p>
         </li>
         <script type="text/javascript">
-            var d = new Date();
-            document.getElementById("work-exp").innerHTML=d.getUTCFullYear() - 2016;
-            document.getElementById("indsigt-year").innerHTML=d.getUTCFullYear() - 2018;
-            document.getElementById("indsigt-month").innerHTML=d.getUTCMonth() - 2;
+            const d = new Date();
+            const y = d.getUTCFullYear()
+            const m = d.getUTCMonth()+1 // starting with Jan as 1
+
+         const calcYear = (el) => (startm,starty) => {
+             if((m - startm) < 0){
+                 el.innerText = y - (starty+1)
+             } else
+                 el.innerText = y - starty
+         }
+
+         const calcMonth = (el) => (startm) =>{
+             if((m-startm) < 0)
+                 el.innerText = (12 - startm) + m
+             else
+                 el.innerText = m - startm
+         }
+
+         document.getElementById("work-exp").innerHTML=d.getUTCFullYear() - 2016;
+         calcYear(document.getElementById("pensure-year"))(12, 2021);
+         calcMonth(document.getElementById("pensure-month"))(12);
+         calcYear(document.getElementById("indsigt-year"))(3, 2018);
+         calcMonth(document.getElementById("indsigt-month"))(3);
         </script>
         <li>
             <p class="text-lg font-bold">Web developer - Backend & Frontend developer</p>
