@@ -320,6 +320,7 @@ module.exports = {
       ...theme('spacing'),
       full: '100%',
       screen: '100vh',
+      14: '14rem',
     }),
     inset: {
       0: '0',
@@ -350,6 +351,7 @@ module.exports = {
       auto: 'auto',
       ...theme('spacing'),
       ...negative(theme('spacing')),
+      minus: '-7.5rem',
     }),
     maxWidth: {
       20: '20rem',
@@ -380,6 +382,7 @@ module.exports = {
     width: (theme) => ({
       auto: 'auto',
       ...theme('spacing'),
+      15: '15rem',
       '1/2': '50%',
       '1/3': '33.33333%',
       '2/3': '66.66667%',
